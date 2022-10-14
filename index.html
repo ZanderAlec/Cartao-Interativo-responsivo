@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Card</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="gradiant-bkg">
+            <img class="card-back" src="img/bg-card-back.png" alt="">
+            <h2 class=" clr-white smll-size visual-cvc-card">000</h2>
+            
+            <img class="card-front" src="img/bg-card-front.png" alt="">
+            <h2 class="clr-white smll-size visual-num-card">0000 0000 0000 0000</h2>
+            <h2 class="clr-white smll-size visual-name-card">Jane Applesed</h2>
+            <h2 class="clr-white smll-size visual-date-card">00/00</h2>
+        </div>
+
+        <div class="container-form">
+
+            <form action="">
+                <div class="campo">
+                    <label>nome do titular</label>
+                    <input id="nome" type="text" name="nome" placeholder="ex: Fulano S. Sicrano" >
+                    <span class="error-msg" id="not-letter">Formato incorreto. Apenas letras são aceitas!</span>
+                    <span class="error-msg" class="empty">Não pode ser vazio!</span>
+                </div>
+
+                <div  class="campo">
+                    <label>número do cartão</label>
+                    <input id="cardNumber" type="text" name="numero" placeholder="ex: 1234 5678 9100 0000">
+                    <span class="error-msg" id="not-letter">Formato incorreto. Apenas números são aceitos!</span>
+                    <span class="error-msg" class="empty">Não pode ser vazio!</span>
+                </div>
+                
+                <div  class="campo">
+                    <label>data de exp. (mm/yy)</label>
+                    <input class="field-mes-ano" id="month" type="text" name="month" placeholder="MM">
+                    <input class="field-mes-ano" id="year" type="text" name="year" placeholder="YY">
+                    <span class="error-msg" class="empty">Não pode ser vazio!</span>
+
+                    <label>cvc</label>
+                    <input class="cvc-field" id="cvc" type="text" name="cvc" placeholder="ex: 123">
+                    <span class="error-msg" class="empty">Não pode ser vazio!</span>
+                </div>
+
+                <button class="confirm-bttm">Confirmar</button>
+            
+            </form>
+
+            <div class="success-card">
+
+
+                <div class="sucess-icon">
+                    
+                </div>
+
+                <h2 class="sucess-title">
+                    Obrigado!
+                </h2>
+
+                <p class="sucess-msg">Os detalhes do cartão foram adicionados!</p>
+                
+                <button class="confirm-bttm">Continuar</button>
+            </div>  
+
+        </div>
+
+    </body>
+</html>

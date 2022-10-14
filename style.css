@@ -1,0 +1,58 @@
+:root{
+    --error-red: hsl(0, 100%, 66%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+
+    --light-purple: hsl(270, 3%, 87%);
+    --medium-purple: hsl(279, 6%, 55%);
+    --dark-purple: hsl(278, 68%, 11%);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    font-size: 18px;
+}
+
+.container-form{
+    /* outline: 1px solid red; */
+    width: min(90%, 30rem);
+    margin: auto;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--dark-purple);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+
+.campo input{
+    border: 2px solid var(--light-purple);
+    border-radius: 5px;
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.4rem;
+}
+
+.campo input::placeholder{
+   color: var(--light-purple);
+   font-weight: 500;
+   font-size: 1rem;
+   padding-left: 10px;
+}
+
+
+
+
+

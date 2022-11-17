@@ -24,31 +24,39 @@
 
             <form action="">
                 <div class="campo">
-                    <label>nome do titular</label>
-                    <input id="nome" type="text" name="nome" placeholder="ex: Fulano S. Sicrano" >
-                    <span class="error-msg" id="not-letter">Formato incorreto. Apenas letras são aceitas!</span>
-                    <span class="error-msg" class="empty">Não pode ser vazio!</span>
+                    <label>cardholder name</label>
+                    <input id="nome" type="text" name="nome" placeholder="e.g. Fulano S. Sicrano" >
+                    <span class="error-msg" id="not-letter">Wrong format, letters only</span>
+                    <span class="error-msg" class="empty">Can't be blank</span>
                 </div>
 
                 <div  class="campo">
-                    <label>número do cartão</label>
-                    <input id="cardNumber" type="text" name="numero" placeholder="ex: 1234 5678 9100 0000">
-                    <span class="error-msg" id="not-letter">Formato incorreto. Apenas números são aceitos!</span>
-                    <span class="error-msg" class="empty">Não pode ser vazio!</span>
+                    <label>card number</label>
+                    <input id="cardNumber" type="text" name="numero" placeholder="e.g. 1234 5678 9100 0000">
+                    <span class="error-msg" id="not-letter">Wrong format, numbers only</span>
+                    <span class="error-msg" class="empty">Can't be blank</span>
                 </div>
                 
-                <div  class="campo">
-                    <label>data de exp. (mm/yy)</label>
-                    <input class="field-mes-ano" id="month" type="text" name="month" placeholder="MM">
-                    <input class="field-mes-ano" id="year" type="text" name="year" placeholder="YY">
-                    <span class="error-msg" class="empty">Não pode ser vazio!</span>
+                <div class="container-date-cvc">
 
-                    <label>cvc</label>
-                    <input class="cvc-field" id="cvc" type="text" name="cvc" placeholder="ex: 123">
-                    <span class="error-msg" class="empty">Não pode ser vazio!</span>
+                    <div class="campo campo--width-data ">
+                        <label>exp. date (mm/yy)</label>
+                        <div class="campo-mes-ano">
+                            <input class="input-mes-ano" id="month" type="text" name="month" placeholder="MM">
+                            <input class="input-mes-ano" id="year" type="text" name="year" placeholder="YY">
+                        </div>
+                        <span class="error-msg" class="empty">Can't be blank</span>
+                    </div>
+
+                    <div  class="campo campo--width-cvc">
+                        <label>cvc</label>
+                        <input class="cvc-field" id="cvc" type="text" name="cvc" placeholder="e.g. 123">
+                        <span class="error-msg" class="empty">Can't be blank</span>
+                    </div>
                 </div>
+              
 
-                <button class="confirm-bttm">Confirmar</button>
+                <button class="confirm-bttm">Confirm</button>
             
             </form>
 
@@ -60,12 +68,12 @@
                 </div>
 
                 <h2 class="sucess-title">
-                    Obrigado!
+                    THANK YOU!
                 </h2>
 
-                <p class="sucess-msg">Os detalhes do cartão foram adicionados!</p>
+                <p class="sucess-msg">We've added your card details</p>
                 
-                <button class="confirm-bttm">Continuar</button>
+                <button class="confirm-bttm">Continue</button>
             </div>  
 
         </div>

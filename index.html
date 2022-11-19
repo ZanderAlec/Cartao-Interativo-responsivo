@@ -10,27 +10,32 @@
     </head>
     <body>
 
-        <div class="gradiant-bkg">
-            <img class="card-back" src="img/bg-card-back.png" alt="">
-            <h2 class=" clr-white smll-size visual-cvc-card">000</h2>
-            
-            <img class="card-front" src="img/bg-card-front.png" alt="">
-            <h2 class="clr-white smll-size visual-num-card">0000 0000 0000 0000</h2>
-            <h2 class="clr-white smll-size visual-name-card">Jane Applesed</h2>
-            <h2 class="clr-white smll-size visual-date-card">00/00</h2>
+        <div class="gradiant-bkg-card">
+            <div class="container-card">
+                    <img class="card-back card" src="img/bg-card-back.png" alt="">
+                    <h2 class=" clr-white smll-size-card visual-cvc-card">000</h2>
+  
+                    <img class="card-front card" src="img/bg-card-front.png" alt="">
+                    <h2 class="clr-white medium-size-card visual-num-card">0000 0000 0000 0000</h2>
+                    <h2 class="clr-white smll-size-card  visual-name-card">Jane Appleseed</h2>
+                    <h2 class="clr-white smll-size-card  visual-date-card">00/00</h2>
+
+                    <div class="circle-close"></div>
+                    <div class="circle-open"></div>
+            </div>
         </div>
 
         <div class="container-form">
 
             <form action="">
-                <div class="campo">
+                <div class="field">
                     <label>cardholder name</label>
                     <input id="nome" type="text" name="nome" placeholder="e.g. Fulano S. Sicrano" >
                     <span class="error-msg" id="not-letter">Wrong format, letters only</span>
                     <span class="error-msg" class="empty">Can't be blank</span>
                 </div>
 
-                <div  class="campo">
+                <div  class="field">
                     <label>card number</label>
                     <input id="cardNumber" type="text" name="numero" placeholder="e.g. 1234 5678 9100 0000">
                     <span class="error-msg" id="not-letter">Wrong format, numbers only</span>
@@ -39,16 +44,16 @@
                 
                 <div class="container-date-cvc">
 
-                    <div class="campo campo--width-data ">
+                    <div class="field field--width-data ">
                         <label>exp. date (mm/yy)</label>
-                        <div class="campo-mes-ano">
+                        <div class="field-mes-ano">
                             <input class="input-mes-ano" id="month" type="text" name="month" placeholder="MM">
                             <input class="input-mes-ano" id="year" type="text" name="year" placeholder="YY">
                         </div>
                         <span class="error-msg" class="empty">Can't be blank</span>
                     </div>
 
-                    <div  class="campo campo--width-cvc">
+                    <div  class="field field--width-cvc">
                         <label>cvc</label>
                         <input class="cvc-field" id="cvc" type="text" name="cvc" placeholder="e.g. 123">
                         <span class="error-msg" class="empty">Can't be blank</span>

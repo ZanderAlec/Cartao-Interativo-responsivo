@@ -19,24 +19,132 @@ body{
     font-size: 18px;
 }
 
+img{
+    display: block; 
+    max-width: 100%;
+}
+
+/*--------------Cartão-----------------------------------*/
+
+.gradiant-bkg-card{
+    background-image: url(img/bg-main-mobile.png);
+    background-size: 100% 100% ;
+    margin-bottom: 5rem;
+    height: 13rem;
+} 
+
+.container-card{
+    max-width: 25rem;
+    margin: auto;
+    position: relative;
+}
+
+.card{
+    width: 15.8rem;
+    position: relative;
+}
+
+.card-front{
+    left: 1rem;
+    top: -1.77rem;
+    z-index: 2;
+}
+
+.card-back{
+    z-index: 1;
+    top: 2rem;
+    left: 3.2rem;
+}
+
+/*informações do cartão-----------------------------------*/
+.clr-white{
+    color: var(--neutral-white);
+}
+
+.smll-size-card{
+    font-size: 0.55em;
+    font-weight: 50;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    display: inline-block;
+}
+
+.medium-size-card{
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.visual-cvc-card{
+    position: absolute;
+    top: 5.9rem;
+    left: 15.5rem;
+    z-index: 2;
+}
+
+.visual-num-card{
+    position: absolute;
+    z-index: 2;
+    top: 11rem;
+    left: 2.5rem;
+}
+
+.visual-name-card{
+    position: absolute;
+    z-index: 2;
+    top: 13.5rem;
+    left: 2.6rem;
+}
+
+.visual-date-card{
+    position: absolute;
+    z-index: 2;
+    top: 13.5rem;
+    left: 13.1rem;
+}
+
+
+.circle-close{
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 8rem;
+    left: 2.4rem;
+    z-index: 2;
+}
+
+.circle-open{
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 8.4rem;
+    left: 4.6rem;
+    z-index: 2;
+}
+
+/*--------------Formulário-----------------------------------*/
+
 .container-form{
     /* outline: 1px solid red; */
     width: min(90%, 30rem);
     margin: auto;
 }
 
-.campo{
+.field{
     margin-bottom: 1rem;
 }
 
-.campo label{
+.field label{
     color: var(--dark-purple);
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: 700;
 }
 
-.campo input{
+.field input{
     border: 2px solid var(--light-purple);
     border-radius: 5px;
     width: 100%;
@@ -44,14 +152,14 @@ body{
     margin-top: 0.4rem;
 }
 
-.campo input::placeholder{
+.field input::placeholder{
    color: var(--light-purple);
    font-weight: 500;
    font-size: 1rem;
    padding-left: 10px;
 }
 
-.campo input:focus{
+.field input:focus{
     outline-color: var(--medium-purple);
 
 }
@@ -61,16 +169,16 @@ body{
     justify-content: space-around;
 }
 
-.campo--width-data{
+.field--width-data{
     flex: 0.4 2 20em;
     margin-right: 0.4em;
 }
 
-.campo--width-cvc{
+.field--width-cvc{
     flex: 2 2 20em;
 }
 
-.campo-mes-ano{
+.field-mes-ano{
     display:flex;
     justify-content: space-around;
 }
@@ -98,6 +206,8 @@ body{
     cursor: pointer;
     background-color: hsl(278, 63%, 16%);
 }
+
+/*--------------Mensagem de sucesso-----------------------------------*/
 
 
 
